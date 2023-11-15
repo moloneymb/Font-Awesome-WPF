@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ImageAwesome.Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ImageAwesome.Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FontAwesomeIcon.cs">
+      <LastGenOutput>FontAwesomeIcon.log</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="..\..\..\Font-Awesome\fonts\FontAwesome.otf">
+      <Link>FontAwesome.otf</Link>
+    </Resource>
+  </ItemGroup>
+
+</Project>
